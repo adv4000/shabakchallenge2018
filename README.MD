@@ -1,12 +1,12 @@
 ### Shabak Challenge 2018 in Software and Data Science
 
 Use Brute-Force for ZIP file
-
+```
 wget http://etgar.eastus.cloudapp.azure.com/software/clues.zip
 sudo apt-get install fcrackzip 
 fcrackzip -b -c 1 clues.zip        <-------here you get your password, Password is: 262626
 unzip clues.zip﻿
-
+```
 
 Python Script need to be fixed:
 
