@@ -1,6 +1,7 @@
 ### Shabak Challenge 2018 in Software and Data Science
 
 To get into Challenges Web Page you need to find and enter password: JOINUS
+
 Here is my video on how to find it:
 https://www.youtube.com/watch?v=BqK95ty95ao&lc=Ugx4tXQ4CZgJnCbfYqV4AaABAg
 
