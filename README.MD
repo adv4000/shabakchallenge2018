@@ -11,6 +11,7 @@ unzip clues.zip﻿
 Python Script need to be fixed:
 
 [--------Start--------------]
+```python
 from PIL import Image,ImageFont
 import textwrap
 from pathlib import Path
@@ -33,7 +34,7 @@ def find_text_in_image(imgPath):
      newImage.save(newImgPath+'/text.png')
      
 find_text_in_image("clue.png")﻿
-
+```
 [--------End-------------]
 
 Decypt of file clue.png give image with text: 
