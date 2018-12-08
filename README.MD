@@ -66,6 +66,7 @@ Fibonacci Sequence: 1,2,3,5,8,13,21,34
 ```
 `yougotit` add spaces and yo got secret answer `you got it`
 
+<img src="Challenge1-Solution.png">
 
 Here is my video on how to solve it:
 https://youtu.be/m1NY8JyOT_0
