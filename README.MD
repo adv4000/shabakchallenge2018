@@ -50,7 +50,9 @@ Decypt of file *clue.png* give image with text:
 This need to be used on Second Image *clueTwo.jpg*, no need to convert it.
 
 10000buts / 8 = 1250 decimal place in file.
-Use Binary Viewer on file *clueTwo.jpg* and start reading characters from Address 1250 by Fibonacci sequence:
+
+Use Binary Viewer on file *clueTwo.jpg* and start reading characters from Address 1250 by Fibonacci sequence.
+
 Fibonacci Sequence: 1,2,3,5,8,13,21,34
 ```
 1=y
