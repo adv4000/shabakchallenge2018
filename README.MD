@@ -1,3 +1,4 @@
+<img src="shabak.png">
 ## Shabak Challenge 2018 in Software and Data Science
 
 To get into Challenges Web Page you need to find and enter password: `JOINUS`
@@ -66,8 +67,43 @@ Fibonacci Sequence: 1,2,3,5,8,13,21,34
 ```
 `yougotit` add spaces and yo got secret answer `you got it`
 
-<img src="Challenge1-Solution.png">
+<img src="./Challenge1/Challenge1-Solution.png">
 
 Here is my video on how to solve it:
 https://youtu.be/m1NY8JyOT_0
 
+
+## Challenge-2
+1. First fix JSON file from `"value": ?` to `"value": "?"`
+
+2. Top Level Keys in JSON are HEX values of Gematria: https://en.wikipedia.org/wiki/Gematria
+
+3. In JSON text you can see a lot of `u05` values, this is Unicode for Hebrew latters: https://en.wikipedia.org/wiki/Unicode_and_HTML_for_the_Hebrew_alphabet
+<img src="./Challenge2/Challenge2-Solution.png">
+4. Value in JSON is SUM of Decimal values of all Unicodes in this 'text'
+
+5. Count all missed 'Value', which represented by `"Value"= "?"`
+
+6. In JSON you can see few keys which called differenly than TEXT, this is actually two clues :),
+if you collect all those words you will get: 
+```
+return
+in
+base64
+sum
+of
+values
+below
+median
+```
+
+7. You need to calculate MEDIAN
+
+8. Calculate SUM of all values which are below MEDIAN, you should get `2501577`
+
+9. Encode calculated SUM to base64 value to get Final Password!
+
+10. You are done.
+
+Here is my video on how to solve it:
+https://youtu.be/Hqsyi1UkjvA
