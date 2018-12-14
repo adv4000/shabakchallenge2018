@@ -133,9 +133,9 @@ wc -l log.csv
 
 3. hint.txt contain 'uid' - userID of suspects
 
-SQL Queries:
+*SQL Queries*:
 
-List number of use per IP per UserId
+`List number of use per IP per UserId`
 ```sql
 select uid,uip, count(uip)
 from 'log-fixed'
@@ -153,7 +153,7 @@ HAVING COUNT(uip) = 601
 order by count(uip) desc
 ```
 
-`Results of queries for hint.txt`
+Results of queries for `hint.txt`
 ```
 UserID	Most used IP	Count of use
 2449	104.45.191.227	601
