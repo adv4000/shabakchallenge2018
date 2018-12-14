@@ -4,6 +4,8 @@
 
 To get into Challenges Web Page you need to find and enter password: `JOINUS`
 
+<img src="./ChallengeEntry/ChallengeEntry-Solution.png">
+
 Here is my video on how to find it:
 https://youtu.be/BqK95ty95ao
 
