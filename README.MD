@@ -1,5 +1,6 @@
 <img src="shabak.png">
-## Shabak Challenge 2018 in Software and Data Science
+
+### Shabak Challenge 2018 in Software and Data Science
 
 To get into Challenges Web Page you need to find and enter password: `JOINUS`
 
@@ -107,3 +108,62 @@ median
 
 Here is my video on how to solve it:
 https://youtu.be/Hqsyi1UkjvA
+
+## Challenge-3
+
+1. Import log.cvs file into any SQL database to simplify data analyzis
+
+2. But before this we need to add into first row few more fields for some junk data
+
+You can edit this file with any editor which can handle 10.000.001 lines.
+We need to change first line
+
+From: `uid,uip,date,url`
+
+To  : `uid,uip,date,url,hara1,hara2,hara3,hara4,hara5`
+
+On Linux it's very fast:
+```
+wget http://etgar.eastus.cloudapp.azure.com/software/TheUsualSuspect.zip
+head log.csv
+sed -i "1s/.*/uid,uip,date,url,hara1,hara2,hara3,hara4/" log.csv
+head log.csv
+wc -l log.csv
+```
+
+3. hint.txt contain 'uid' - userID of suspects
+
+SQL Queries:
+
+List number of use per IP per UserId
+```sql
+select uid,uip, count(uip)
+from 'log-fixed'
+where uid ='4918'
+group by uip
+order by count(uip) desc
+```
+
+```sql
+List IP addresses and userID with usage number 601
+select uid, uip, count(uip)
+from 'log-fixed'
+group by uid,uip
+HAVING COUNT(uip) = 601
+order by count(uip) desc
+```
+
+Results of queries for `hint.txt`
+```
+UserID	Most used IP	Count of use
+2449	104.45.191.227	601
+6796	138.27.249.121	601
+9237	130.76.88.3	601
+4024	230.167.210.226	601
+3538	67.141.120.237	601
+3608	162.219.33.114	601
+7239	143.204.212.207	601
+435	68.17.81.83	601
+2211	114.79.247.223	601
+5206	10.192.20.173	601
+```
