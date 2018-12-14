@@ -144,8 +144,8 @@ group by uip
 order by count(uip) desc
 ```
 
+`List IP addresses and userID with usage number 601`
 ```sql
-List IP addresses and userID with usage number 601
 select uid, uip, count(uip)
 from 'log-fixed'
 group by uid,uip
@@ -153,7 +153,7 @@ HAVING COUNT(uip) = 601
 order by count(uip) desc
 ```
 
-Results of queries for `hint.txt`
+`Results of queries for hint.txt`
 ```
 UserID	Most used IP	Count of use
 2449	104.45.191.227	601
