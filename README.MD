@@ -81,6 +81,7 @@ https://youtu.be/m1NY8JyOT_0
 
 3. In JSON text you can see a lot of `u05` values, this is Unicode for Hebrew latters: https://en.wikipedia.org/wiki/Unicode_and_HTML_for_the_Hebrew_alphabet
 <img src="./Challenge2/Challenge2-Solution.png">
+
 4. Value in JSON is SUM of Decimal values of all Unicodes in this 'text'
 
 5. Count all missed 'Value', which represented by `"Value"= "?"`
@@ -116,22 +117,23 @@ https://youtu.be/Hqsyi1UkjvA
 2. But before this we need to add into first row few more fields for some junk data
 
 You can edit this file with any editor which can handle 10.000.001 lines.
-We need to change first line
+We need to change just first line
 
-From: `uid,uip,date,url`
-
-To  : `uid,uip,date,url,hara1,hara2,hara3,hara4,hara5`
+From `uid,uip,date,url` To `uid,uip,date,url,hara1,hara2,hara3,hara4,hara5`
 
 On Linux it's very fast:
 ```
 wget http://etgar.eastus.cloudapp.azure.com/software/TheUsualSuspect.zip
+unzip TheUsualSuspect.zip
 head log.csv
 sed -i "1s/.*/uid,uip,date,url,hara1,hara2,hara3,hara4/" log.csv
 head log.csv
 wc -l log.csv
 ```
 
-3. hint.txt contain 'uid' - userID of suspects
+3. hint.txt contain 'uid' - userID of suspects on which we need to base our search
+
+4. I'am using SQLite Browser to import and run SQL Queries https://sqlitebrowser.org/
 
 *SQL Queries*:
 
@@ -165,5 +167,8 @@ UserID	Most used IP	Count of use
 7239	143.204.212.207	601
 435	68.17.81.83	601
 2211	114.79.247.223	601
-5206	10.192.20.173	601
+5206	10.192.20.173	601    <--- Private IP Address
 ```
+
+Here is my video on how to partialy solve it:
+https://youtu.be/XON76wBHpIk
