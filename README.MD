@@ -153,7 +153,7 @@ HAVING COUNT(uip) = 601
 order by count(uip) desc
 ```
 
-Results of queries for `hint.txt`
+Most used IP addresses for guys from `hint.txt`
 ```
 UserID	Most used IP	Count of use
 2449	104.45.191.227	601
