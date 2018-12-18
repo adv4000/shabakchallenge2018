@@ -22,4 +22,3 @@ def find_text_in_image(imgPath):
      
 
 find_text_in_image("clue.png")
-find_text_in_image("clueTwo.jpg")
