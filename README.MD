@@ -105,7 +105,7 @@ median
 
 8. Calculate SUM of all values which are below MEDIAN, you should get `2501577`
 
-9. Encode calculated SUM to base64 value to get Final Password!
+9. Encode calculated SUM to base64 value to get Final Password: `MjUwMTU3Nw==`
 
 10. You are done.
 
@@ -174,3 +174,9 @@ UserID	Most used IP	Count of use
 
 Here is my video on how to partialy solve it:
 https://youtu.be/XON76wBHpIk
+
+Solution for Challenge-3 is:
+`41.239.144.6,103.205.114.34,127.95.83.100`
+
+## Mazal Tov Agent A!
+<img src="./Challenge3/TheEnd.png">
